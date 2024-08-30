@@ -89,6 +89,7 @@ class ContactBase(BaseModel):
     email: str
     phone: str
     message: str
+    is_checked: bool
 
 class ContactCreate(ContactBase):
     created_at: datetime

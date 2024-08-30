@@ -115,6 +115,7 @@ def create_contact(contact: schemas.ContactCreate, db: Session = Depends(get_db)
         email=contact.email,
         phone=contact.phone,
         message=contact.message,
+        is_checked=contact.is_checked,
     )
     db.add(db_contact)
     db.commit()
